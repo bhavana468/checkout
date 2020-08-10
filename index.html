@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/fontawesome.min.js" integrity="sha512-i3N2a3sMtKOQHXCJF3qEpce5twcGN9mRsWQe6PUTf9WS/eG5XkivI97uxit7B2nRGz5XuoszBaqndSqxdeVfag==" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container my-4">
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+              <h2>Billing address</h2>
+              
+              <form class="form-group">
+                <div class="row">
+                <div class="col-md-6">
+                  <label for="firstname" style="float: left;">First Name</label>
+                 <input type="text" id="firstname" placeholder="Enter username" class="form-control mr-2">
+                </div>
+                <div class="col-md-6" >
+                 <label for="lastname">Last Name</label>
+                 <input type="text" id="lastname" placeholder="Password" class="form-control mr-2"></div></div>
+                 <div class="input-group my-3">
+                     <div class="input-group-prepend">
+                         <span class="input-group-text">@</span>
+                     </div>
+                     <input type="text" class="form-control" placeholder="username">
+                 
+                 </div>
+                 <div class="form-group my-3">
+                    <label for="email">Email <span class="text-muted">(optional)</span></label>
+                    <input type="text" class="form-control" placeholder="you@example.com">
+                
+                </div>
+                <div class="form-group my-3">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" placeholder="1234 Main st">
+                
+                </div>
+                <div class="form-group my-3">
+                    <label for="address2">Address2<span class="text-muted">(optional)</span></label>
+                    <input type="text" class="form-control" placeholder="1234 Main st">
+                
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group ">
+                            <label for="country" >Country</label>
+                            <select id="country" class="form-control d-block w-100 custom-select">
+                                <option>choose..</option>
+                                <option>India</option>
+                            </select>
+                        </div>
+                        
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group ">
+                            <label for="state" >State</label>
+                            <select id="state" class="form-control d-block w-100 custom-select">
+                                <option>choose..</option>
+                                <option>Andhrapradesh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group ">
+                            <label for="state" >ZIP</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-check my-2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Shipping address is same as my billing address
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Save this information for the next time
+                    </label>
+                  </div>
+                  <h3 class="my-3">Payment</h3>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Credit Card
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                    <label class="form-check-label" for="exampleRadios2">
+                      Debit Card
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                    <label class="form-check-label" for="exampleRadios2">
+                      Paypal
+                    </label>
+                  </div>
+                  <div class="row my-3">
+                      <div class="col-md-6">
+                        <div class="form-group ">
+                            <label for="name" >Name on card</label>
+                            <input type="text" class="form-control">
+                            <small>Full name as displayed on card</small>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group ">
+                            <label for="credit" >Credit card number</label>
+                            <input type="text" class="form-control">
+                        </div>
+                          
+                    </div>
+                       </div>
+                       <div class="row my-3">
+                           <div class="col-md-3">
+                               <div class="form-group ">
+                            <label for="name" >Expiration</label>
+                            <input type="text" class="form-control">
+                            
+                        </div></div>
+                           <div class="col-md-3">
+                               <div class="form-group ">
+                            <label for="name" >CVV</label>
+                            <input type="text" class="form-control">
+                           
+                        </div></div>
+                           <div class="col-md-3"></div>
+                           <div class="col-md-3"></div>
+                       </div>
+                       <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+                       
+                </form>
+        
+             </div>
+             <div class="col-md-4"> 
+                <div class="d-flex justify-content-between">
+                
+                <h2>Your cart </h2>
+                
+                <span class="badge badge-pill badge-primary  text-right">3</span></div>
+                
+                <!-- <div class="card"> -->
+                    <!-- <div class="card-body"> -->
+                        <div class="list-group mt-4">
+                            <ul class="list-group">
+                                <li class="list-group-item"><strong>Name </strong> <span style="float: right;">$12</span><br>
+                                    <small>Brief description</small>
+                                </li>
+                                <li class="list-group-item"><strong >Product</strong><span style="float: right;">$8</span><br><small>Brief description</small></li>
+                                
+                                <li class="list-group-item"><strong>Third Item</strong> <span style="float: right;">$5</span><br><small>Brief description</small></li>
+                                <li class="list-group-item text-success"><strong>Code</strong><span style="float: right;">-$5</span><br><small>EXAMPLE CODE</small></li>
+                                <li class="list-group-item">Total(USD) <span style="float: right;"><strong>$20</strong></span></li>
+                                
+                                
+                            </ul>
+                        </div>
+                        <div class="list-group mt-3">
+                            <div class="list-group-item">
+                                
+                 <div class="input-group my-3">
+                     
+                     <input type="text" class="form-control" placeholder="Promo code">
+                     <div class="input-group-prepend">
+                        <button class="btn btn-secondary" style="border-radius:2px">Redeem</button>
+                    </div>
+                 
+                 </div>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                <!-- </div> -->
+                
+               
+
+            
+        </div></div>
+    
+        
+    
+    
+    
+</body>
+</html>
